@@ -63,11 +63,11 @@ async def vplay(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="●↯التـحـكــم↯●", callback_data="cbmenu"),
-                InlineKeyboardButton(text="🗑اغــلاق●", callback_data="cls"),
+                InlineKeyboardButton(text="التحكم 💻", callback_data="cbmenu"),
+                InlineKeyboardButton(text="🗑اغلاق ", callback_data="cls"),
               ],
-              [InlineKeyboardButton(ALIVE_NAME, url=f"t.me/{OWNER_NAME}"),
-              InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"t.me/{UPDATES_CHANNEL}"),
+              [InlineKeyboardButton(ALIVE_NAME, url=f"t.me/L120N"),
+              InlineKeyboardButton("🕊 𝑬𝑳𝑴𝑼𝑺𝑳𝑰𝑴 🕊", url=f"t.me/{UPDATES_CHANNEL}"),
                 ],
               [InlineKeyboardButton("🎧اضافه البوت اللي مجموعتك🎧", url=f"http://t.me/{BOT_USERNAME}?startgroup=new"),              
             ]
@@ -301,11 +301,11 @@ async def vstream(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="●↯التـحـكــم↯●", callback_data="cbmenu"),
-                InlineKeyboardButton(text="🗑اغــلاق●", callback_data="cls"),
+                InlineKeyboardButton(text="التحكم 💻", callback_data="cbmenu"),
+                InlineKeyboardButton(text="🗑اغلاق", callback_data="cls"),
               ],
-              [InlineKeyboardButton(ALIVE_NAME, url=f"t.me/{OWNER_NAME}"),
-              InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"t.me/{UPDATES_CHANNEL}"),
+              [InlineKeyboardButton(ALIVE_NAME, url=f"t.me/L120N"),
+              InlineKeyboardButton("🕊 𝑬𝑳𝑴𝑼𝑺𝑳𝑰𝑴 🕊", url=f"t.me/{UPDATES_CHANNEL}"),
               ],
               [InlineKeyboardButton("🎧اضافه البوت اللي مجموعتك🎧", url=f"http://t.me/{BOT_USERNAME}?startgroup=new"),               
             ]
