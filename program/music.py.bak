@@ -1,4 +1,4 @@
-# Copyright (C) 2021 By LeGend Music-Project
+# Copyright (C) 2021 By Amort Music-Project
 # Commit Start Date 20/10/2021
 # Finished On 28/10/2021
 
@@ -61,9 +61,9 @@ async def play(c: Client, m: Message):
                 InlineKeyboardButton(text="اغلاق 🗑", callback_data="cls"),
                 ],
               [InlineKeyboardButton(ALIVE_NAME, url=f"t.me/L120N"),
-              InlineKeyboardButton("قناه البوت 📣", url=f"t.me/{UPDATES_CHANNEL}"),
+              InlineKeyboardButton("🕊 𝑬𝑳𝑴𝑼𝑺𝑳𝑰𝑴 🕊", url=f"t.me/{UPDATES_CHANNEL}"),
                 ],
-              [InlineKeyboardButton("ضيف البوت لمجموعتك ✅", url=f"http://t.me/{BOT_USERNAME}?startgroup=new"),              
+              [InlineKeyboardButton("🎧اضافه البوت اللي مجموعتك🎧", url=f"http://t.me/{BOT_USERNAME}?startgroup=new"),              
             ]
         ]
     )

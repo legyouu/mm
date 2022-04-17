@@ -58,12 +58,12 @@ async def _human_time_duration(seconds):
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""✨ **مرحبا عزيزي ⇦ {message.from_user.mention()} !**\n
-💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **يتيح لك تشغيل الموسيقى والفيديو في مجموعات من خلال المكالمات الجديدة في Telegram!**
-💡 **اضفني مشرف مع صلاحيه اضافه مستخدمين واكتب انضم و اكتشف جميع أوامر البوت وكيفية عملها من خلال النقر على زر »📚الأوامر🎮 او اضغط زر الاوامر المعربه او اكتب الاوامر**
-🔖 **لمعرفة كيفية استخدام هذا البوت ، يرجى النقر فوق » زر 🔮طريقة الاستخدام🔮! يوزر الحساب المساعد  @{ASSISTANT_NAME} **
-⚡𝐏𝐑𝐎𝐆𝐑𝐀𝐌𝐌𝐄𝐑 **[{ALIVE_NAME}](https://t.me/L120N) **
-""",
+        f""" مرحبا {message.from_user.mention()} !**\n
+💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME})/n
+        💭 انا بوت استطيع تشغيل الموسيقي والفديو في محادثتك الصوتية**\n
+**💡 تعلم طريقة تشغيلي واوامر التحكم بي عن طريق  » 📚 الاوامر !**
+**🔖 لتعلم طريقة تشغيلي بمجموعتك اضغط علي » ❓طريقة الاستخدام !**
+**المبرمج [{ALIVE_NAME}](https://t.me/L120N)**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -73,17 +73,17 @@ async def start_(client: Client, message: Message):
                     )
                 ],
                 [InlineKeyboardButton("❓طريقه الاستخدام", callback_data="cbhowtouse")],
-                [InlineKeyboardButton("الاوامر العربيه 🕊", callback_data="cbbasic")],
+                [InlineKeyboardButton("الاوامر العربيه 👨", callback_data="cbbasic")],
                 [
-                    InlineKeyboardButton("الاوامر 🕊", callback_data="cbcmds"),
-                    InlineKeyboardButton("المساعد 🕊", url=f"https://t.me/{ASSISTANT_NAME}"),
+                    InlineKeyboardButton("الاوامر 📚", callback_data="cbcmds"),
+                    InlineKeyboardButton("المساعد ❤️`", url=f"https://t.me/{ASSISTANT_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "جروب الدعم 🕊", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "جروب الدعم 👥", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "🕊 𝑬𝑳𝑴𝑼𝑺𝑳𝑰𝑴 🕊", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "قناه البوت 📣", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
@@ -96,6 +96,28 @@ async def start_(client: Client, message: Message):
         disable_web_page_preview=True,
     )
 
+
+@Client.on_message(command(["لمطور","طور","مبير","لبرمج"]) & ~filters.edited)
+async def help(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"https://t.me/L120N",
+        caption=f"""◍ الزرار الاول: قناه السورس \n◍ الزرار الثاني: هو مبرمج السورس\n√""",
+        reply_markup=InlineKeyboardMarkup(
+         [
+            [
+                InlineKeyboardButton("قناه السورس 📣", url=f"https://t.me/{UPDATES_CHANNEL}"),
+            ],
+            [
+                InlineKeyboardButton(
+                        ALIVE_NAME, url=f"https://t.me/L120N"
+                ),
+            ],
+            [
+                InlineKeyboardButton("ضيف البوت لمجموعتك ✅", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+            ]
+         ]
+     )
+  )
 
 @Client.on_message(
     command(["alive","لسورس","ورس", f"alive@{BOT_USERNAME}"]) & filters.group & ~filters.edited

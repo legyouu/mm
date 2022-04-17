@@ -1,4 +1,4 @@
-# Copyright (C) 2021 By Amor Music-Project
+# Copyright (C) 2021 By legend Music-Project
 
 from __future__ import unicode_literals
 

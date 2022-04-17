@@ -1,4 +1,4 @@
-# Copyright (C) 2021 By Amort Music-Project
+# Copyright (C) 2021 By LeGend Music-Project
 # Commit Start Date 20/10/2021
 # Finished On 28/10/2021
 
