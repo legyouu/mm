@@ -46,6 +46,7 @@
         "MONGODB_URL": {
             "description": "fill with the mongodb url you created from cloud.mongodb.com (tutorial about how to make it, find it on @VeezSupportGroup)",
             "required": true
+            "value": "mongodb://mongo:r4Zi5XYCSQxCbKBirs68@containers-us-west-36.railway.app:7839"
         },
         "SUDO_USERS": {
             "description": "list of user id to be added to sudo member list, or just fill with your id",
@@ -75,11 +76,12 @@
         "OWNER_ID": {
             "description": "fill with your own telegram id, this is needed because there's any feature that only can be used by bot owner",
             "required": true 
+            "value": "1236115319"
         },
         "ALIVE_NAME": {
             "description": "fill with your telegram account nickname/name",
             "required": true,
-            "value": "@𝑳 𝑬 𝑮 𝑬 𝑵 𝑫.❤_ "
+            "value": "@𝑳 𝑬 𝑮 𝑬 𝑵 𝑫.❤_"
         }
     },
     "addons": [],
