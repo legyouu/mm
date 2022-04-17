@@ -1,7 +1,7 @@
 {
     "name": "LEGEND MUSIC",
     "description": "Telegram bot for Streaming Video & Music trought the Telegram Group Video Chat, powered by PyTgCalls and Pyrogram",
-    "logo": "https://t.me/UU_LE2",
+    "logo": "https://t.me/UU_Le2",
     "keywords": [
         "py-tgcalls",
         "telegram bot",
@@ -46,17 +46,16 @@
         "MONGODB_URL": {
             "description": "fill with the mongodb url you created from cloud.mongodb.com (tutorial about how to make it, find it on @VeezSupportGroup)",
             "required": true
-            "value": "mongodb://mongo:r4Zi5XYCSQxCbKBirs68@containers-us-west-36.railway.app:7839"
         },
         "SUDO_USERS": {
             "description": "list of user id to be added to sudo member list, or just fill with your id",
             "required": true,
-            "value": "1236115319"
+            "value": "2093265110"
         },
         "UPSTREAM_REPO": {
-            "description": "اتركها كما هيا",
+            "description": "This is needed for update feature, if you deployed forked repo put your forked repo link here, if not just leave it as it",
             "required": true,
-            "value": "https://github.com/legyouh/mm"
+            "value": "https://github.com/VamBIR/freee"
         },
         "GROUP_SUPPORT": {
             "description": "if you have group, then fill the group username here without @",
@@ -76,7 +75,6 @@
         "OWNER_ID": {
             "description": "fill with your own telegram id, this is needed because there's any feature that only can be used by bot owner",
             "required": true 
-            "value": "1236115319"
         },
         "ALIVE_NAME": {
             "description": "fill with your telegram account nickname/name",
